@@ -20,7 +20,7 @@ const FormField: React.FC<FormFieldProps> = ({ title, value, placeholder, handle
       <Text className="text-base text-gray-100 font-pmedium">{title}</Text>
 
       <View className='border-2 border-black-200 w-full h-16 px-4 bg-gray-100 rounded-2xl focus:border-secondary items-center flex-row'>
-        <TextInput className='flex-1 text-white font-psemibold text-base'
+        <TextInput className='flex-1 text-black font-psemibold text-base'
             value={value}
             placeholder={placeholder}
             placeholderTextColor='#7b7b8b'
