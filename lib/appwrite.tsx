@@ -90,4 +90,17 @@ client
             throw new Error(`Error occurred while fetching current user: ${error.message}`);
         }
     }
+
+    export const getAllPosts = async () => {
+        try {
+            const posts = await databases.listDocuments(
+                appwriteConfig.databaseId, 
+                appwriteConfig.videosCollectionId
+            )
+            return posts.documents;
+        } catch (error: any) {
+            throw new Error(error);
+        }
+
+    }
 ;
